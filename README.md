@@ -38,3 +38,33 @@ I made a website about car repair, but basically what I did was to take a design
 ## Video
 
 https://user-images.githubusercontent.com/99032604/198900187-1d4dfa68-c6d4-48aa-9601-28e5f44f3edc.mp4
+
+## Documentation
+
+With `btnOpenNav` we get the button that will open the ship, with the `btnCloseNav` button we will close the ship and finally with the `navContainer` it will be that we will assign the class to open the ship or close:
+
+```
+const btnOpenNav = document.getElementById("btnOpen");
+const btnCloseNav = document.getElementById("btnClose");
+const navContainer = document.querySelector(".header_container-nav");
+```
+
+At this time we assign the click event. Depending on the button, a class will be added or removed from `navContainer`, whether or not the `btnOpenNav` button will be shown and not the `btnCloseNav` will be shown or not:
+
+```
+btnOpenNav.addEventListener("click", ()=>{
+
+    navContainer.classList.add("show-nav");
+    btnOpenNav.classList.add("noshow-btn");
+    btnCloseNav.style.display = "block";
+
+});
+
+btnCloseNav.addEventListener("click", ()=>{
+
+    navContainer.classList.remove("show-nav");
+    btnOpenNav.classList.remove("noshow-btn");
+    btnCloseNav.style.display = "none";
+
+});
+```
