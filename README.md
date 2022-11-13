@@ -33,7 +33,7 @@ I made a website about car repair, but basically what I did was to take a design
 
 ## Portfolio Link
 
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Automotive%20car%20page`
+`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Automotive%20Car%20Page`
 
 ## Video
 
